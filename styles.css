@@ -235,9 +235,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.5rem;
     font-weight: 800;
     color: var(--text-dark);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     line-height: 1.1;
     letter-spacing: -1.5px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--ocean-blue);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+}
+
+.hero-subtitle .company-emphasis {
+    font-weight: 700;
+    color: #6AA0C5;
 }
 
 .hero-sections {
@@ -267,13 +280,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.hero-passion {
-    font-size: 0.95rem;
-    color: var(--ocean-blue);
-    font-weight: 600;
-    line-height: 1.6;
-}
-
 .hero-hobbies {
     font-size: 0.95rem;
     color: var(--text-light);
@@ -282,7 +288,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-hobbies strong {
-    color: var(--mint-green);
+    color: var(--text-dark);
+    font-weight: 700;
 }
 
 .hero-connect {
@@ -441,6 +448,19 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 
+.education-header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.education-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 .education-card h3 {
     font-size: 1.5rem;
     color: var(--text-dark);
@@ -502,6 +522,18 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
     padding-left: 1rem;
     margin: 0;
+}
+
+.education-bullets {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+.education-bullets li {
+    margin-bottom: 0.5rem;
 }
 
 /* Timeline */
@@ -617,13 +649,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 1rem;
-}
-
-.description {
-    color: var(--text-light);
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    font-weight: 500;
 }
 
 .achievements {
@@ -879,7 +904,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
     }
     
-    .hero-passion, .hero-hobbies, .hero-connect {
+    .hero-hobbies, .hero-connect {
         font-size: 0.9rem;
     }
     
@@ -889,18 +914,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero {
         min-height: auto;
-    }
-    
-    .marquee-section {
-        padding: 1rem 0;
-    }
-    
-    .marquee-item {
-        padding: 0 1.5rem;
-    }
-    
-    .tech-item {
-        padding: 0 1rem;
     }
     
     .contact-link {
@@ -990,154 +1003,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Marquee Sections */
-.marquee-section {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    background: white;
-    backdrop-filter: blur(10px);
-    padding: 1.5rem;
-    border-radius: 16px;
-    z-index: 2;
-}
-
-.marquee-section:not(.company-marquee) {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.company-marquee {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: fit-content;
-    padding: 1.25rem 2rem;
-    border: 2px solid rgba(168, 213, 186, 0.3);
-    box-shadow: none;
-}
-
-.marquee {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-/* Tech marquee specific - scrollable */
-.tech-marquee .marquee {
-    overflow-x: auto;
-    overflow-y: hidden;
-    cursor: grab;
-    user-select: none;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
-}
-
-.tech-marquee .marquee::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-}
-
-.tech-marquee .marquee:active {
-    cursor: grabbing;
-}
-
-/* Static company logos */
-.company-logos-static {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-.marquee-content {
-    display: flex;
-    animation: marquee 40s linear infinite;
-}
-
-.marquee-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0 2rem;
-    white-space: nowrap;
-}
-
-.company-logos-static .marquee-item {
-    padding: 0;
-    gap: 0.5rem;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.company-logos-static .marquee-item:hover {
-    transform: translateY(-4px);
-}
-
-.company-logos-static .marquee-item img {
-    height: 32px;
-    width: auto;
-    object-fit: contain;
-    opacity: 0.9;
-    transition: opacity 0.3s ease;
-}
-
-.company-logos-static .marquee-item:hover img {
-    opacity: 1;
-}
-
-.company-logos-static .marquee-item span {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    letter-spacing: 0.02em;
-}
-
-.marquee-item img {
-    height: 28px;
-    width: auto;
-    object-fit: contain;
-}
-
-.marquee-item span {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-dark);
-}
-
-.tech-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0 1.5rem;
-    white-space: nowrap;
-}
-
-.tech-item svg {
-    width: 28px;
-    height: 28px;
-    opacity: 0.85;
-}
-
-.tech-item span {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #4B5563;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* Removed hover pause - now controlled by JS for better UX */
-
 /* Contact Form */
 .contact-container {
     max-width: 600px;
@@ -1168,7 +1033,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid rgba(168, 213, 186, 0.3);
     border-radius: 8px;
     font-size: 1rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'SF Pro Display', sans-serif;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     background: white;
 }
