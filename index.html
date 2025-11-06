@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oviya Seeniraj</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">OS</a>
+            <ul class="nav-menu">
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#about" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+
+        <div class="hero-header">
+            <img src="images/headshot.png" alt="Oviya Seeniraj" class="hero-headshot">
+        </div>
+        
+        <div class="hero-content fade-in">
+            <div class="hero-badge">🌟 Seeking Spring 2026 Internships</div>
+            <h1 class="hero-title">Hi, I'm Oviya!</h1>
+            
+            <div class="hero-sections">
+                <div class="hero-left">
+                    <p class="hero-intro">
+                        I'm a final-year Computer Engineering student at UC Santa Barbara with hands-on experience in machine learning, full-stack development, and distributed systems.
+                    </p>
+                </div>
+                
+                <div class="hero-divider"></div>
+                
+                <div class="hero-right">
+                    <p class="hero-hobbies">
+                        <strong>Beyond Code:</strong> You'll find me reading thriller novels, curating Spotify playlists, exploring cafes (big matcha fan!), hiking, or swimming.
+                    </p>
+                    <p class="hero-connect">
+                        Reach out if you'd like to chat or would like to build! Right now I am most interested in AI/ML.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero-links">
+                <a href="mailto:oviya.seeniraj@gmail.com" class="contact-link" title="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/oviyaseeniraj" target="_blank" class="contact-link" title="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/oviya-seeniraj/" target="_blank" class="contact-link" title="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://open.spotify.com/user/31xronekt3fatnfgfarylcxc3uay" target="_blank" class="contact-link" title="Spotify">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="#experience" class="btn btn-primary">View Experience</a>
+                <a href="#skills" class="btn btn-secondary">View Skills</a>
+                <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Industry Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" id="nvidia-experience">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <div class="company-logo-container">
+                                <img src="images/nvidia-logo.png" alt="NVIDIA" class="company-logo-img">
+                                <div class="company-logo-text">NVIDIA</div>
+                            </div>
+                            <span class="timeline-date">Sep 2025 - Present</span>
+                        </div>
+                        <h3 class="position-title">Software Engineering Intern</h3>
+                        <h4 class="team-name">Dynamo (GenAI LLM Inference) • Santa Clara, CA</h4>
+                        <ul class="achievements">
+                            <li>Building hardware fault injection framework for GPU faults and network partitions to enhance fault tolerance in large-scale inference systems</li>
+                            <li>Implementing fault detection and recovery mechanisms using custom Linux kernel level tools, Kubernetes NetworkPolicies, ChaosMesh, etc.</li>
+                            <li>Deploying and testing fault tolerance systems across multi-cloud, multi-GPU Kubernetes environments (Azure AKS, AWS EKS)</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Azure AKS</span>
+                            <span class="tag">AWS EKS</span>
+                            <span class="tag">Grafana</span>
+                            <span class="tag">Prometheus</span>
+                            <span class="tag">eBPF</span>
+                            <span class="tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" id="meta-experience">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <div class="company-logo-container">
+                                <img src="images/meta-logo.png" alt="Meta" class="company-logo-img">
+                                <div class="company-logo-text">Meta</div>
+                            </div>
+                            <span class="timeline-date">Jun 2025 - Sep 2025</span>
+                        </div>
+                        <h3 class="position-title">Production Software Engineering Intern</h3>
+                        <h4 class="team-name">Ads Machine Learning: Model Training Team • Seattle, WA</h4>
+                        <ul class="achievements">
+                            <li>Built new toolsuite used by 20+ directors/managers to reduce production issue (SEV) response times</li>
+                            <li>Derived novel submetrics dataset serving a drill-down dashboard via ETL pipeline from 8+ Hive tables to track contributors to response delays</li>
+                            <li>Designed real-time monitoring systems with automated task creation and on-call notifications</li>
+                            <li>Trained ML recommendation models achieving 15% reduction in SEV response times using Causal Inference & LightGBM</li>
+                            <li>Developed agentic AI LLM Agent for dynamic period-over-period SEV analysis and ML-based recommendations</li>
+                            <li>Updated organization-wide ML model pre-training methodologies with 2 new Service Level Indicators</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI Agents</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">Real-time Monitoring</span>
+                            <span class="tag">Data Pipelines</span>
+                            <span class="tag">ETL</span>
+                            <span class="tag">Hive</span>
+                            <span class="tag">Presto</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Causal Inference</span>
+                            <span class="tag">LightGBM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" id="ucsb-experience">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <div class="company-logo-container">
+                                <img src="images/ucsb-logo.png" alt="UC Santa Barbara" class="company-logo-img">
+                                <div class="company-logo-text">UC Santa Barbara</div>
+                            </div>
+                            <span class="timeline-date">Sep 2024 - Dec 2024</span>
+                        </div>
+                        <h3 class="position-title">Full-Stack Developer</h3>
+                        <h4 class="team-name">UCSB Website • Santa Barbara, CA</h4>
+                        <ul class="achievements">
+                            <li>Collaborated in team of 6 using Agile methodologies to expand UCSB dining services' website</li>
+                            <li>Backend: Created PostgreSQL database tables and expanded API services in Java (Spring Boot)</li>
+                            <li>Frontend: Implemented React.js components with interactive tables and forms</li>
+                            <li>Deployed services using Dokku with 100% JaCoCo & PITest coverage</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Dokku</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" id="ipmd-experience">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="company-header">
+                            <div class="company-logo-container">
+                                <img src="images/ipmd-logo.png" alt="IPMD" class="company-logo-img">
+                                <div class="company-logo-text">IPMD</div>
+                            </div>
+                            <span class="timeline-date">Jun 2024 - Dec 2024</span>
+                        </div>
+                        <h3 class="position-title">Software Engineering Intern</h3>
+                        <h4 class="team-name">AI Algorithm Development & DevOps • San Mateo, CA</h4>
+                        <ul class="achievements">
+                            <li>Built low-latency SQLite ETL financial data pipeline for Python trading algorithm</li>
+                            <li>Automated daily calculations and reporting using Google Sheets REST API and CronJobs</li>
+                            <li>Deployed services and built CI/CD pipelines using Azure, GCP, and GitHub workflows</li>
+                        </ul>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">
+                            <img src="images/python.png" alt="Python">
+                            Python (PCAP)
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/c++.png" alt="C++">
+                            C/C++
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/java.png" alt="Java">
+                            Java
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/javascript.png" alt="JavaScript">
+                            JavaScript
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/typescript.png" alt="TypeScript">
+                            TypeScript
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/sql.png" alt="SQL">
+                            SQL
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/kotlin.png" alt="Kotlin">
+                            Kotlin
+                        </span>
+                        <span class="skill-item">Verilog HDL</span>
+                        <span class="skill-item">RISC-V Assembly</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web & Frameworks</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">
+                            <img src="images/react.png" alt="React">
+                            React.js
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/nodejs.png" alt="Node.js">
+                            Node.js
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/springboot.png" alt="Spring Boot">
+                            Spring Boot
+                        </span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">REST APIs</span>
+                        <span class="skill-item">GraphQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">
+                            <img src="images/pytorch.png" alt="PyTorch">
+                            PyTorch
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/tensorflow.png" alt="TensorFlow">
+                            TensorFlow
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/scikitlearn.png" alt="scikit-learn">
+                            scikit-learn
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/huggingface.png" alt="Hugging Face">
+                            Hugging Face
+                        </span>
+                        <span class="skill-item">LLMs & NLP</span>
+                        <span class="skill-item">Computer Vision</span>
+                        <span class="skill-item">Reinforcement Learning</span>
+                        <span class="skill-item">LightGBM</span>
+                        <span class="skill-item">XGBoost</span>
+                        <span class="skill-item">
+                            <img src="images/vllm.png" alt="vLLM">
+                            vLLM
+                        </span>
+                        <span class="skill-item">TensorRT-LLM</span>
+                        <span class="skill-item">Causal Inference</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">
+                            <img src="images/kubernetes.png" alt="Kubernetes">
+                            Kubernetes (K8s)
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/docker.png" alt="Docker">
+                            Docker
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/aws.png" alt="AWS">
+                            AWS (EKS)
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/azure.png" alt="Azure">
+                            Azure (AKS)
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/gcp.png" alt="Google Cloud">
+                            Google Cloud (GCP)
+                        </span>
+                        <span class="skill-item">CI/CD Pipelines</span>
+                        <span class="skill-item">
+                            <img src="images/githubactions.png" alt="GitHub Actions">
+                            GitHub Actions
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/grafana.png" alt="Grafana">
+                            Grafana
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/prometheus.png" alt="Prometheus">
+                            Prometheus
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/linux.png" alt="Linux">
+                            Linux/Unix
+                        </span>
+                        <span class="skill-item">eBPF</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Data</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">
+                            <img src="images/postgresql.png" alt="PostgreSQL">
+                            PostgreSQL
+                        </span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">
+                            <img src="images/mongodb.png" alt="MongoDB">
+                            MongoDB
+                        </span>
+                        <span class="skill-item">SQLite</span>
+                        <span class="skill-item">
+                            <img src="images/apachehive.png" alt="Apache Hive">
+                            Apache Hive
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/numpy.png" alt="NumPy">
+                            NumPy
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/pandas.png" alt="Pandas">
+                            Pandas
+                        </span>
+                        <span class="skill-item">PySpark</span>
+                        <span class="skill-item">ETL Pipelines</span>
+                        <span class="skill-item">
+                            <img src="images/matplotlib.png" alt="Matplotlib">
+                            Matplotlib
+                        </span>
+                        <span class="skill-item">Seaborn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Systems</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">
+                            <img src="images/github.png" alt="GitHub">
+                            Git/GitHub
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/swagger.png" alt="Swagger">
+                            Swagger
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/postman.png" alt="Postman">
+                            Postman
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/jupyternotebooks.png" alt="Jupyter">
+                            Jupyter
+                        </span>
+                        <span class="skill-item">Agile/Scrum</span>
+                        <span class="skill-item">
+                            <img src="images/jira.png" alt="Jira">
+                            Jira
+                        </span>
+                        <span class="skill-item">Dokku</span>
+                        <span class="skill-item">
+                            <img src="images/firebase.png" alt="Firebase">
+                            Firebase
+                        </span>
+                        <span class="skill-item">
+                            <img src="images/chromatic.png" alt="Chromatic">
+                            Chromatic
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3>University of California, Santa Barbara</h3>
+                            <p class="location">Santa Barbara, CA</p>
+                        </div>
+                        <span class="education-date">Sep 2022 - Jun 2026</span>
+                    </div>
+                    <p class="degree">Bachelor of Science in Computer Engineering, GPA: 3.9</p>
+                    <div class="honors">
+                        <p><strong>Honors:</strong> Regents Scholar (Top 1% of class) • Engineering Honors Program • Dean's Honors • Tau Beta Pi (top 20% of engineering students) </p>
+                    </div>
+                    <div class="coursework-section">
+                        <p class="coursework-title"><strong>AI / Machine Learning:</strong></p>
+                        <p class="coursework-list">Transformers, Reinforcement Learning, Algorithmic Searches, Bandits, Red Teaming, Adversarial Robustness, Backpropagation, Classifiers, Regularization, Ethics in ML</p>
+                    </div>
+                    <div class="coursework-section">
+                        <p class="coursework-title"><strong>Foundational:</strong></p>
+                        <p class="coursework-list">Data Structures & Algorithms, Application Development (Web, Android), Computer Networks, Operating Systems, Distributed Systems, Embedded Systems, Compilers, Logic Design, Computer Architecture</p>
+                    </div>
+                    <div class="coursework-section">
+                        <p class="coursework-title"><strong>Math & Physics:</strong></p>
+                        <p class="coursework-list">Advanced Statistics & Probability, Linear Algebra, Differential Equations, Fluid Dynamics, Electricity & Magnetism</p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3>Lynbrook High School</h3>
+                            <p class="location">San Jose, CA</p>
+                        </div>
+                        <span class="education-date">Aug 2018 - Jun 2022</span>
+                    </div>
+                    <p class="degree">Valedictorian, Unweighted GPA: 4.0, 14 APs, ACT: 36/36</p>
+                    <div class="honors">
+                        <p><strong>Honors:</strong> AP Scholar with Distinction • National Merit Scholarship Finalist • Outstanding Young Woman in Computing Award</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Improving Recourse in Machine Learning</h3>
+                    <p class="project-period">Jan 2025 - Mar 2025</p>
+                    <p class="project-description">Implemented adversarial debiasing and distributionally robust optimization to improve fairness and robustness in ML models. Enhanced DiCE library with diverse counterfactual explanation generation under adversarial constraints.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">ML</span>
+                        <span class="tag">DiCE</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>QoS & QoE Metrics Extraction</h3>
+                    <p class="project-period">May 2025</p>
+                    <p class="project-description">Engineered scalable data pipelines to extract frame-level jitter, video/audio stats, and FPS trends from Google Meet and YouTube pcaps, enabling real-time streaming quality monitoring with custom parsers and statistical analysis.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Minecraft AI - Reinforcement Learning</h3>
+                    <p class="project-period">Apr - Jun 2025</p>
+                    <p class="project-description">Designed hybrid AI agent combining Q-Learning, Policy Gradient, A*, and Expectimax algorithms to maximize reward. Built modular framework for AI experimentation achieving superior performance in complex, stochastic environments.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyGame</span>
+                        <span class="tag">RL</span>
+                        <span class="tag">Q-Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>KOS: Operating System for MIPS Processors</h3>
+                    <p class="project-period">Jan 2025 - Mar 2025</p>
+                    <p class="project-description">Built complete operating system on simulated machine that initializes system and responds to exceptions and device interrupts. Implemented std I/O library, malloc, shells with fork/execve/wait, and pipeline processes.</p>
+                    <div class="tags">
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">OS</span>
+                        <span class="tag">Concurrency</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>FPGA Chromatic Tuner</h3>
+                    <p class="project-period">Oct 2024 - Dec 2024</p>
+                    <p class="project-description">Real-time FFT enabled note detection, frequency histogram, octave selection, and error visualization on peripheral LCD. Built UI with hierarchical state machines responding to rotary encoder and button inputs.</p>
+                    <div class="tags">
+                        <span class="tag">C/C++</span>
+                        <span class="tag">FPGA</span>
+                        <span class="tag">Vivado</span>
+                        <span class="tag">Xilinx</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Machine Learning Stock Predictor</h3>
+                    <p class="project-period">May 2024 - Jun 2024</p>
+                    <p class="project-description">Predicted Google stock trends based on 2016-2021 data with 95% accuracy. Implemented Deep Learning techniques using Long Short Term Memory networks with Keras and PyTorch.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Keras</span>
+                        <span class="tag">LSTM</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Embedded Systems Garage Door</h3>
+                    <p class="project-period">May 2024 - Jun 2024</p>
+                    <p class="project-description">Used register-level programming on Nucleo Board to control 3D-printed garage door. Implemented firmware reactions to Bluetooth commands, temperature sensors, and accelerometer positioning.</p>
+                    <div class="tags">
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Nucleo</span>
+                        <span class="tag">Keil</span>
+                        <span class="tag">Embedded</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Vivi - Smart Wristband</h3>
+                    <p class="project-period">Jul 2021</p>
+                    <p class="project-description">Engineered intensive prototype for smart wristband with teen-oriented social productivity app. Developed Go-To-Market plan at University of Pennsylvania's Management & Technology Summer Institute.</p>
+                    <div class="tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Flutter</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bounce Back</h3>
+                    <p class="project-period">Oct 2020 - Apr 2021</p>
+                    <p class="project-description">Detail-oriented Android app aiding the unhoused by providing resources for stability. Three-pronged UI/UX for unhoused individuals, donors, and shelters interfacing with database and Maps API.</p>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">XML</span>
+                        <span class="tag">Android Studio</span>
+                        <span class="tag">Maps API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form" action="https://formspree.io/f/xvgoqqao" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="_replyto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Oviya Seeniraj. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
