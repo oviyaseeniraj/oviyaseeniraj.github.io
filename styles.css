@@ -674,6 +674,23 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+.achievements ul {
+    list-style: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.achievements ul li {
+    font-size: 0.95em;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.achievements ul li::before {
+    content: '◦';
+    color: var(--mint-green);
+}
+
 /* Tags */
 .tags {
     display: flex;
@@ -898,14 +915,14 @@ h1, h2, h3, h4, h5, h6 {
     .hero-divider {
         width: 100%;
         height: 2px;
-        background: linear-gradient(to right, transparent, var(--mint-green), transparent);
+        background: linear-gradient(to right, transparent 20%, var(--mint-green) 50%, transparent 80%);
     }
     
     .hero-intro {
         font-size: 1rem;
         margin-bottom: 0;
     }
-
+    
     .hero-subtitle {
         line-height: 1.2;
     }
