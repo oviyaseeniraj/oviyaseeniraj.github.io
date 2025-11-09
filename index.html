@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oviya Seeniraj</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
         </div>
         
         <div class="hero-content fade-in">
-            <div class="hero-badge">Seeking internships beginning January 2026!</div>
+            <div class="hero-badge">Seeking internships beginning January 2026</div>
             <h1 class="hero-title">Hi, I'm Oviya!</h1>
             <p class="hero-subtitle">Software Engineering Intern @ <span class="company-emphasis">NVIDIA</span> | Previously @ <span class="company-emphasis">Meta</span></p>
             
@@ -107,9 +107,14 @@
                         <h3 class="position-title">Software Engineering Intern</h3>
                         <h4 class="team-name"><a href="https://www.nvidia.com/en-us/ai/dynamo/" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 1px solid var(--ocean-blue);">Dynamo</a> (GenAI LLM Inference) • Santa Clara, CA</h4>
                         <ul class="achievements">
-                            <li>Building hardware fault injection framework for GPU faults and network partitions to enhance fault tolerance in large-scale inference systems</li>
-                            <li>Implementing fault detection and recovery mechanisms using custom Linux kernel level tools, Kubernetes NetworkPolicies, ChaosMesh, etc.</li>
-                            <li>Deploying and testing fault tolerance systems across multi-cloud, multi-GPU Kubernetes environments (Azure AKS, AWS EKS)</li>
+                            <li>Built hardware fault injection framework to enable fault tolerance testing in large-scale inference systems (vLLM, SGLang, TensorRT-LLM)
+                                <ul>
+                                    <li>Simulated GPU failures (ECC errors, bus failures, NVLink faults) via kernel-level XID injection and CUDA library interception</li>
+                                    <li>Architected network chaos engineering using Kubernetes NetworkPolicies and ChaosMesh for partitions, packet loss, and latency simulation</li>
+                                </ul>
+                            </li>
+                            <li>Implementing fault-tolerant Expert Parallelism () with detection and recovery mechanisms such as dynamic expert re-routing to optimize recovery in distributed MoE inference systems</li>
+                            <li>Deploying and validating fault tolerance systems across multi-cloud, multi-GPU Kubernetes environments (Azure AKS, AWS EKS)</li>
                         </ul>
                         <div class="tags">
                             <span class="tag">C</span>
